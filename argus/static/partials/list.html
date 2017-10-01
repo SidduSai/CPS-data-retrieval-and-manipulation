@@ -1,0 +1,25 @@
+<div class="black" >
+   <div class="row" >
+      <div >
+         <div class="filter-area white-text" >
+            <div class="col s5" ><span >{{data.count}}</span><span > plcs </span><span >listed</span></div>
+            <div class="col s7 right-align" >&nbsp;</div>
+         </div>
+      </div>
+      <section class="dapps row">
+        <div class="col ms12 m4 l3 xl2 xxl1"  ng-repeat="(key,plc) in data.plcs" ng-click="moveTo(plc.link)">
+	        <div class="card hoverable dapp-card light-green accent-3">
+	               <div class="card-content" >
+	                  <div class="main-section center-align" >
+	                     <div class="card-title truncate" ><a href={{plc.link}}>{{plc.name}}</a></div>
+	                     <div class="card-subtitle trunchate" >PLC {{key+1}}</div>
+	                     <div class="card-description" >
+	                        <p >{{plc.desc}}</p>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	        </div>
+      </section>
+   </div>
+</div>

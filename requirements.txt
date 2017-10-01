@@ -1,0 +1,7 @@
+coloredlogs == 7.0
+daemonize == 2.4.7
+Flask == 0.10.1
+influxdb == 4.1.0
+redis == 2.10.5
+requests == 2.9.1
+paho_mqtt == 1.2.3
